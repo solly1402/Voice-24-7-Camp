@@ -42,6 +42,21 @@ Follow these steps to get your self-bot running in minutes!
 > **Warning:** Keep your token private! Never share it publicly.
 
 ### 3. Set Up on Render.com
+1. **Push to GitHub**: Create a repo, push code (no hardcoded token).
+2. **Configure**:
+   - **Render.com**:
+     - Create a new Node.js app, link GitHub.
+     - Add env variable: `TOKEN=your_token_here`.
+     - Set start command: `node levelbot.js`.
+     - Deploy.
+   - **Heroku**:
+     - Create app, link GitHub.
+     - "Settings" > "Config Vars" > Add `TOKEN`.
+     - Deploy.
+   - **Replit**:
+     - Import from GitHub.
+     - "Secrets" > Add `TOKEN`.
+     - Run.
 
 #### Create a Project:
 
@@ -53,11 +68,16 @@ Follow these steps to get your self-bot running in minutes!
 1. Copy the contents of `index.js` and `keep_alive.js` from this project into new files with the same names.
 
 #### Install Dependencies:
-
-In the Render.com shell, run:
-```sh
-npm install discord.js express
-```
+1. **Clone or Download**: `git clone <repository_url>` or download ZIP.
+2. **Install Dependencies**:
+   - Open terminal in the folder.
+   - Run: `npm install discord.js-selfbot-v13 express`.
+3. **Configure Token**:
+   - Open `index.js`.
+   - Replace `'YOUR_DISCORD_TOKEN_HERE'` with your token, or use:
+     - Windows: `set TOKEN=your_token_here`
+     - Linux/Mac: `export TOKEN=your_token_here`
+4. **Run**: `node index.js`.
 
 #### Configure the Bot:
 
