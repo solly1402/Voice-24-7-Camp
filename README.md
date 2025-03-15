@@ -47,7 +47,7 @@ Follow these steps to get your self-bot running in minutes!
    - **Render.com**:
      - Create a new Node.js app, link GitHub.
      - Add env variable: `TOKEN=your_token_here`.
-     - Set start command: `node levelbot.js`.
+     - Set start command: `node index.js`.
      - Deploy.
    - **Heroku**:
      - Create app, link GitHub.
